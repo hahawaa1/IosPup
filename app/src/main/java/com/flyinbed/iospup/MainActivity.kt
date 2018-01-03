@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        //按钮一
         text.setOnClickListener {
            var popup =  SelectPicPopupWindow(this)
 //            popup.topView.text = "我是顶部"
@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
             }
             popup.show(main)
         }
-
+        //按钮二
         text1.setOnClickListener {
             var popup =  SelectPicPopupWindow(this)
-//            popup.topView.text = "我是顶部"
+            //中间第一个item
             popup.fristView.setOnClickListener {
                 println("aaaaaa")
                 popup.hint()
